@@ -27,7 +27,7 @@ public class CityChain extends Coin {
         super("CityChain", "CITY", new Base58BitcoinAddressValidator(new CityChainMainNetParams()), Network.MAINNET);
     }
 
-    public static class DogecoinMainNetParams extends NetworkParametersAdapter {
+    public static class CityChainMainNetParams extends NetworkParametersAdapter {
         public CityChainMainNetParams() {
             this.addressHeader = 28;
             this.p2shHeader = 88;
