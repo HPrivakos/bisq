@@ -24,7 +24,7 @@ import org.junit.Test;
 public class CityChainTest extends AbstractAssetTest {
 
     public CityChainTest() {
-        super(new Navcoin());
+        super(new CityChain());
     }
 
     @Test
