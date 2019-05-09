@@ -21,14 +21,14 @@ import bisq.asset.Base58BitcoinAddressValidator;
 import bisq.asset.Coin;
 import bisq.asset.NetworkParametersAdapter;
 
-public class CityChain extends Coin {
+public class CityCoin extends Coin {
 
-    public CityChain() {
-        super("CityChain", "CITY", new Base58BitcoinAddressValidator(new CityChainMainNetParams()), Network.MAINNET);
+    public CityCoin() {
+        super("CityCoin", "CITY", new Base58BitcoinAddressValidator(new CityCoinMainNetParams()), Network.MAINNET);
     }
 
-    public static class CityChainMainNetParams extends NetworkParametersAdapter {
-        public CityChainMainNetParams() {
+    public static class CityCoinMainNetParams extends NetworkParametersAdapter {
+        public CityCoinMainNetParams() {
             this.addressHeader = 28;
             this.p2shHeader = 88;
             this.acceptableAddressCodes = new int[]{this.addressHeader, this.p2shHeader};
